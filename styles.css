@@ -3,7 +3,7 @@
 }
 
 body {
-  min-height: 100vh;
+  min-height: 200vh;
 }
 
 section {
@@ -11,13 +11,13 @@ section {
 }
 
 section span {
-  position: absolute;
+  position: fixed;
   color: white;
   background: blue;
   width: 100px;
   height: 100px;
-  top: -10px;
-  right: -10px;
+  top: 0px;
+  right: 0px;
 }
 
 #logo {
