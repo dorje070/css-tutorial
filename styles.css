@@ -5,10 +5,13 @@
 
 #grid {
   display: grid;
-  grid-template-columns: 1fr 20px 1fr;
+  /* column-gap: 10px;
+  row-gap: 20px; */
+  gap: 20px;
+  grid-template-columns: 1fr 1fr 1fr;
   grid-template-areas:
     'header header header'
-    'main . sidebar'
+    'main sidebar ad'
     'footer footer footer';
 }
 
@@ -27,21 +30,34 @@
 main {
   background-color: green;
   grid-area: main;
+  padding: 50px 0;
+  font-size: 21px;
 }
 
 aside {
   background: black;
   color: white;
   grid-area: sidebar;
+  padding: 50px 0;
+  font-size: 21px;
 }
 
 footer {
   color: white;
   background: blue;
   grid-area: footer;
+  padding: 50px 0;
+  font-size: 21px;
+}
+
+div {
+  background: lightskyblue;
+  grid-template-rows: ad;
 }
 
 header {
   background: yellow;
   grid-area: header;
+  padding: 50px 0;
+  font-size: 21px;
 }
