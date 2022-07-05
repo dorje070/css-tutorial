@@ -13,8 +13,7 @@ sans-serif {
 #grid {
   background: yellow;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows: 150px 250px 320px 420px;
+  grid-template-columns: repeat(5, 1fr);
 }
 
 #grid div {
