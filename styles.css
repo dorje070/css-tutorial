@@ -1,27 +1,30 @@
-* {
-  margin: 0;
-}
-
 body {
-  min-height: 200vh;
+  padding: 10px;
+  margin: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    Oxygen, Ubuntu, Cantarell, Fira Sans, Helvetica Neue;
 }
 
-section {
-  position: relative;
+sans-serif {
+  line-height: 1.5;
+  font-size: 10px;
 }
 
-section span {
-  position: fixed;
-  color: white;
-  background: blue;
+#grid {
+  background: yellow;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+#grid div {
   width: 100px;
   height: 100px;
-  top: 0px;
-  right: 0px;
 }
 
-#logo {
+#grid div:nth-child(2n) {
   background: red;
-  width: 100%;
-  height: 200px;
+}
+
+#grid div:nth-child(2n + 1) {
+  background: blue;
 }
